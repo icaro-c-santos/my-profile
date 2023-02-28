@@ -1,9 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import ResponsiveAppBar from './Componentes/Navbar/NavBar';
 function App() {
-  return <></>;
+
+  
+  return <>
+  <ResponsiveAppBar/>
+  </>;
 
 }
 
