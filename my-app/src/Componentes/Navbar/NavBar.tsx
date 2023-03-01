@@ -12,8 +12,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const pages = ['Home', 'About', 'Portifolio',"Experiences"];
+const settings = ['Home', 'About', 'Portifolio',"Experiences"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -37,7 +38,7 @@ function ResponsiveAppBar() {
   return (
     <>
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{bgcolor:"black"}}>
         <Toolbar disableGutters>
     
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -72,17 +73,21 @@ function ResponsiveAppBar() {
               <Button
                 key={Math.random()}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block', transition:"0.5s","&:hover": {
+                  cursor: "pointer",
+                  backgroundColor:"gray",
+                  transition:"0.5s"
+                } }}
               >
                 {page}
               </Button>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0, }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              MENU
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0,color:"white",fontSize:"14px",display: { xs: 'flex', md: 'none' } }}>
+              Menu
               </IconButton>
             </Tooltip>
             <Menu
