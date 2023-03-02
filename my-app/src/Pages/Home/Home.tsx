@@ -7,7 +7,7 @@ export const Home = () => {
         <Box sx={{ height: "400px", margin: "30px auto", bgcolor: "pink" }}>
           Wellcome to My Profile
           <h1>
-            OLÁ, Me chamo Ícaro, tenho 24 anos, sou um apaixonado por
+            Olá, Me chamo Ícaro, tenho 24 anos, sou um apaixonado por
             programação, buscando a cada dia aprender um pouco mais sobre esse
             universo enorme da computação, atualmente estudo na UFBA 3º
             semestre.
