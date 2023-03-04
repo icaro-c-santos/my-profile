@@ -34,7 +34,7 @@ const BoxImage = ({ url }: { url: string }) => {
 
  
   return (
-    <Box>
+    <Box sx={{border: "1px solid black"}}>
       <Keyframes>
         <img src={url} width={"100%"} />
       </Keyframes>

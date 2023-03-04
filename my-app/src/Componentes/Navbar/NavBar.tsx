@@ -73,8 +73,7 @@ function ResponsiveAppBar() {
               <Button
                 key={Math.random()}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', transition:"0.5s","&:hover": {
-                  cursor: "pointer",
+                sx={{ my: 2, color: 'white', display: 'block', cursor:"pointer",transition:"0.5s","&:hover": {
                   backgroundColor:"gray",
                   transition:"0.5s"
                 } }}
