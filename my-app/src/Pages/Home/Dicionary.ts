@@ -4,10 +4,13 @@ import project_02 from "../../imgs/project-02.png";
 export const listImgs: string[] = [project_01, project_02];
 
 const date = new Date().getFullYear() - 1997;
+const semester = (new Date().getFullYear() - 2020) * 2 // mudar para calcular o semestre corretamente
 export const DICTIONARY = {
-  wellcome: ` Olá, Me chamo Ícaro, tenho ${date} anos, sou um apaixonado por
+  wellcomeTitle:`SEJA BEM VINDO AO MEU PERFIL!`,
+  WellcomeSubTitle:`Siga adiante para saber um pouco mais sobre mim.`,
+  wellcome: ` Olá, me chamo Ícaro, tenho ${date} anos, sou um apaixonado por
     programação, buscando a cada dia aprender um pouco mais sobre esse
-    universo enorme da computação, atualmente estudo na UFBA 3º
+    universo enorme da computação, atualmente estudo na UFBA ${semester}º
     semestre.`,
   summary: `Apaixonado por programação, ao lado é possível conferir alguns
     projetos pessoais que desenvolvi buscando sempre seguir os padrões de

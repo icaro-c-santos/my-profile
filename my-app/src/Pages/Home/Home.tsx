@@ -2,6 +2,7 @@ import { Box, Container, SxProps, Theme, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { DICTIONARY, listImgs } from "./Dicionary";
 import BoxImage from "./BoxImage";
+import { Wellcome } from "./Wellcome";
 
 export const Home = () => {
   const [boxImage, setBoxImage] = useState<any>(null);
@@ -22,10 +23,7 @@ export const Home = () => {
     <Container sx={{ marginTop: "40px" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box sx={{ height: "400px", margin: "30px auto", bgcolor: "#f8f9fa" }}>
-          Wellcome to My Profile
-          <h1>
-           {DICTIONARY.wellcome}
-          </h1>
+          <Wellcome></Wellcome>
         </Box>
       </Box>
       <Box
