@@ -20,4 +20,5 @@ export const DICTIONARY = {
     documentação, levantamento de requisitos e tudo mais sobre os mesmo. Ou 
     se estiver com muita pressa pode conferir um resumo de minhas 
     qualificações e experiências no meu curriculo simplificado logo aqui abaixo.`,
+    linkCurriculum:""
 };

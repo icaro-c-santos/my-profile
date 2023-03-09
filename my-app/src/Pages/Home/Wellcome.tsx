@@ -8,13 +8,19 @@ export const Wellcome = () => {
   return (
     <>
       <Box
-        sx={{ display: "flex", flexDirection: "column", padding: "50px 30px" }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          padding: "50px 30px",
+          marginBottom:"20px",
+          bgcolor: "#f8f9fa",
+        }}
       >
         <Box>
           <Typography sx={{ fontSize: "40px" }}>
             <h1>{DICTIONARY.wellcomeTitle}</h1>
           </Typography>
-          <Typography sx={{ fontSize: "18px", marginBottom:"25px" }}>
+          <Typography sx={{ fontSize: "18px", marginBottom: "25px" }}>
             <h2>{DICTIONARY.WellcomeSubTitle}</h2>
           </Typography>
         </Box>
@@ -39,7 +45,7 @@ export const Wellcome = () => {
                 color: "black",
               },
             }}
-            onClick={()=>navigate("/about")}
+            onClick={() => navigate("/about")}
           >
             Leia Mais..
           </Button>

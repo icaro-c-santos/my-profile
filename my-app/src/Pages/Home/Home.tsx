@@ -1,8 +1,9 @@
 import { Box, Container, SxProps, Theme, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { DICTIONARY, listImgs } from "./Dicionary";
+import {  listImgs } from "./Dicionary";
 import BoxImage from "./BoxImage";
 import { Wellcome } from "./Wellcome";
+import { SectionSumary } from "./SectionSumary";
 
 export const Home = () => {
   const [boxImage, setBoxImage] = useState<any>(null);
@@ -22,28 +23,15 @@ export const Home = () => {
   return (
     <Container sx={{ marginTop: "40px" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box sx={{ height: "400px", margin: "30px auto", bgcolor: "#f8f9fa" }}>
           <Wellcome></Wellcome>
-        </Box>
       </Box>
       <Box
         flexDirection={{ md: "row", sm: "column" }}
         sx={{ display: "flex", justifyContent: "space-between" }}
       >
         <Box sx={{ width: "600px", padding: "10px" }}>{boxImage}</Box>
-        <Box
-          sx={{
-            maxWidth: "400px",
-            bgcolor: "#212529",
-            padding: "40px",
-            fontSize: "20px",
-            lineHeight: 1.5,
-            textAlign: "justify",
-            color: "whitesmoke"
-          }}
-        >
-          {DICTIONARY.summary}
-        </Box>
+
+        <SectionSumary />
       </Box>
       <Box>
         <Box
