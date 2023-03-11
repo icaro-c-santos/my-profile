@@ -47,7 +47,7 @@ export const SectionSumary = () => {
         padding: "40px",
         gap: "20px 0px",
       }}
-    >
+    ><Typography sx={{color:"white",textAlign:"center",fontSize:"26px"}}>Resumo:</Typography>
       <Typography
         sx={{
           fontSize: "20px",

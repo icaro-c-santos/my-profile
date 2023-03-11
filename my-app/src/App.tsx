@@ -5,14 +5,14 @@ import { About } from "./Pages/About/About";
 import { Experiences } from "./Pages/Experiences/Experiences";
 import { Portifolio } from "./Pages/Portifolio/Portifolio";
 import { Container } from "@mui/system";
-import image from "../src/imgs/background.jpg"
+import image from "../src/imgs/background.jpg";
 import { Footer } from "./Componentes/Footer";
 
 function App() {
   return (
     <>
-      <ResponsiveAppBar />
-     <Router>
+      <Router>
+        <ResponsiveAppBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/experiences" element={<Experiences />} />
         </Routes>
       </Router>
-      <Footer/>
+      <Footer />
     </>
   );
 }
