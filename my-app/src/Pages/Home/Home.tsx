@@ -1,9 +1,10 @@
 import { Box, Container, SxProps, Theme, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import {  listImgs } from "./Dicionary";
+import { listImgs } from "./Dicionary";
 import BoxImage from "./BoxImage";
 import { Wellcome } from "./Wellcome";
 import { SectionSumary } from "./SectionSumary";
+import { SectionTechnologies } from "./SectionTechnologies";
 
 export const Home = () => {
   const [boxImage, setBoxImage] = useState<any>(null);
@@ -21,34 +22,23 @@ export const Home = () => {
   }, []);
 
   return (
-    <Container sx={{ marginTop: "40px" }}>
+    <Container sx={{ marginTop: "40px", maxWidth: "1400px!important" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Wellcome></Wellcome>
+        <Wellcome></Wellcome>
       </Box>
       <Box
         flexDirection={{ md: "row", sm: "column" }}
-        sx={{ display: "flex", justifyContent: "space-between" }}
+        sx={{
+          gap: "60px",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
       >
-        <Box sx={{ width: "600px", padding: "10px" }}>{boxImage}</Box>
+        <Box sx={{ maxWidth: "1000px" }}>{boxImage}</Box>
 
         <SectionSumary />
       </Box>
-      <Box>
-        <Box
-          sx={{
-            display: "flex",
-            height: "200px",
-            flexDirection: "row",
-            bgcolor: "#212529",
-            margin: "40px auto",
-          }}
-        >
-          Progresso
-          <li>duo</li>
-          <li>outro</li>
-          <li>outro</li>
-        </Box>
-      </Box>
+      <Box>{<SectionTechnologies />}</Box>
     </Container>
   );
 };
