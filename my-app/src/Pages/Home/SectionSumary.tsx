@@ -50,7 +50,7 @@ export const SectionSumary = () => {
     ><Typography sx={{color:"white",textAlign:"center",fontSize:"26px"}}>Resumo:</Typography>
       <Typography
         sx={{
-          fontSize: "20px",
+          fontSize: "18px",
           lineHeight: 1.5,
           textAlign: "justify",
           color: "whitesmoke",
